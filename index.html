@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <h1 id="insult">Less do it</h1>
+        <h1 id="range">Range 0-100</h1>
+        <div class="input">
+            <input type="text" placeholder="Guess the number" id="input">
+        </div>
+        <span>Lives: <p id="remain"></p></span><br>
+        <button id="button">Enter</button><br><button id="newGameButton">New Game</button>
+    </div>
+
+    <!-- Modal for Game Over -->
+    <div id="gameOverModal" class="modal">
+        <div class="modal-content">
+            <h2>Game Over!</h2>
+            <p>No more tries left.</p>
+            <button id="newGameButton">New Game</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
