@@ -7,14 +7,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="main">
+    <!-- Difficulty Selection Div -->
+    <div id="difficultySelection" class="difficulty-selection">
+        <h1>Select Difficulty</h1>
+        <button id="easyButton">Easy (10 lives)</button>
+        <button id="normalButton">Normal (5 lives)</button>
+        <button id="hardButton">Hard (3 lives)</button>
+    </div>
+
+    <!-- Main Game Section -->
+    <div class="main" id="gameSection" style="display: none;">
         <h1 id="insult">Less do it</h1>
         <h1 id="range">Range 0-100</h1>
         <div class="input">
             <input type="text" placeholder="Guess the number" id="input">
         </div>
         <span>Lives: <p id="remain"></p></span><br>
-        <button id="button">Enter</button><br><button id="newGameButton">New Game</button>
+        <button id="buttonEnter">Enter</button><br>
+        <button id="newGameButtonMain">New Game</button>
     </div>
 
     <!-- Modal for Game Over -->
@@ -22,7 +32,16 @@
         <div class="modal-content">
             <h2>Game Over!</h2>
             <p>No more tries left.</p>
-            <button id="newGameButton">New Game</button>
+            <button id="newGameButtonModal">New Game</button>
+        </div>
+    </div>
+
+    <!-- Modal for Winning the Game -->
+    <div id="winGameModal" class="modal">
+        <div class="modal-content">
+            <h2>Congratulations!</h2>
+            <p>You guessed the correct number!</p>
+            <button id="newGameButtonWin">New Game</button>
         </div>
     </div>
 
